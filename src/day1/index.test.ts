@@ -1,4 +1,4 @@
-import { getHighestThreeValues, getHighestValue } from "./index";
+import { partOne, partTwo } from "./index";
 import input from "./input";
 
 const sampleInput = `
@@ -20,15 +20,15 @@ const sampleInput = `
 
 describe("day 1", () => {
   test("challenge 1 sample data", () => {
-    expect(getHighestValue(sampleInput)).toBe(24000);
+    expect(partOne(sampleInput)).toBe(24000);
   });
   test("challenge 1 real data", () => {
-    expect(getHighestValue(input)).toBe(68442);
+    expect(partOne(input)).toBe(68442);
   });
   test("challenge 2 sample data", () => {
-    expect(getHighestThreeValues(sampleInput)).toBe(45000);
+    expect(partTwo(sampleInput)).toBe(45000);
   });
   test("challenge 2 real data", () => {
-    expect(getHighestThreeValues(input)).toBe(204837);
+    expect(partTwo(input)).toBe(204837);
   });
 });

@@ -73,7 +73,7 @@ const prepare = (input: string): string[] => {
 /**
  * @param input String input
  */
-export const dayOne = (input: string) => {
+export const partOne = (input: string) => {
   const data = prepare(input);
   console.log(data);
   return data
@@ -87,7 +87,7 @@ export const dayOne = (input: string) => {
 /**
  * @param input String input
  */
-export const dayTwo = (input: string) => {
+export const partTwo = (input: string) => {
   const data = prepare(input);
   console.log(data);
   return data

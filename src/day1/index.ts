@@ -17,7 +17,7 @@ const prepare = (input: string): number[] => {
  * Get the highest value
  * @param input String input
  */
-export const getHighestValue = (input: string) => {
+export const partOne = (input: string) => {
   const data = prepare(input);
   return Math.max(...data);
 };
@@ -26,7 +26,7 @@ export const getHighestValue = (input: string) => {
  * Get the highest three value
  * @param input String input
  */
-export const getHighestThreeValues = (input: string) => {
+export const partTwo = (input: string) => {
   const data = prepare(input).sort((a, b) => {
     return b - a;
   });

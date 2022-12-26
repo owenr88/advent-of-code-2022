@@ -45,7 +45,7 @@ const prepare = (input: string): Data[] => {
 /**
  * @param input String input
  */
-export const dayOne = (input: string) => {
+export const partOne = (input: string) => {
   const data = prepare(input);
   return data.reduce((total, item) => {
     return total + item.priority;
@@ -55,7 +55,7 @@ export const dayOne = (input: string) => {
 /**
  * @param input String input
  */
-export const dayTwo = (input: string) => {
+export const partTwo = (input: string) => {
   const data = prepare(input);
   const groupData = new Map<number, number>();
   data.forEach((item) => {
